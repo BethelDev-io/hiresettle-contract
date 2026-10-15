@@ -392,5 +392,20 @@ pub enum DataKey2 {
     /// (engagement_id, milestone_index) (issue #486). Present only while the
     /// milestone's current proof is a root; a plain `submit_proof` clears it.
     ProofMerkleRoot(String, u32),
+    /// Last ledger at which a proposer's amendment was rejected on an engagement
+    /// (issue #496). Used to enforce the reproposal cooldown.
+    SplitAmendmentRejectedAt(String, Address),
+    /// Minimum absolute platform fee per fee-bearing payout (issue #478).
+    PlatformFeeFloor,
+    /// Per-token base platform-fee bps override (issue #479).
+    TokenPlatformFee(Address),
+    /// Admin-tunable weights for `get_engagement_risk_score` (issue #480).
+    RiskScoreWeights,
+    /// Granted extension count for an (engagement_id, milestone_index)
+    /// (issue #480); contributes to the engagement risk score.
+    MilestoneExtensionCount(String, u32),
+    /// Compliance-hold reason for (engagement_id, milestone_index) (issue #492).
+    /// Present ⇒ the milestone is on hold; absent ⇒ not held.
+    MilestoneHold(String, u32),
 }
 

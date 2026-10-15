@@ -229,6 +229,9 @@ impl HireSettleContract {
             panic!("MaxDisputeCyclesReached");
         }
         env.storage().persistent().set(&cycles_key, &(cycles + 1));
+        env.storage()
+            .persistent()
+            .extend_ttl(&cycles_key, 100_000, 6_300_000);
 
         let old_status = milestone.status.clone();
         milestone.status = MilestoneStatus::Disputed;

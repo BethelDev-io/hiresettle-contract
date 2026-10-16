@@ -2660,3 +2660,6 @@ MIT
 
 <!-- handsoff-issue-579 -->
 - #579: feat: get_engagements_by_created_range query — filter by creation ledger
+
+<!-- handsoff-issue-580 -->
+- #580: feat: recruiter profile aggregate query

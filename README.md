@@ -2663,3 +2663,6 @@ MIT
 
 <!-- handsoff-issue-580 -->
 - #580: feat: recruiter profile aggregate query
+
+<!-- handsoff-issue-582 -->
+- #582: feat: get_protocol_stats query — global totals for dashboards

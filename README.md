@@ -2663,3 +2663,6 @@ MIT
 
 <!-- handsoff-issue-568 -->
 - #568: feat: arbiter dispute inbox query — disputes awaiting a given arbiter's vote
+
+<!-- handsoff-issue-597 -->
+- #597: feat: verified recruiter expiry

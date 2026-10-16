@@ -2663,3 +2663,6 @@ MIT
 
 <!-- handsoff-issue-566 -->
 - #566: feat: escalation fee — the escalating party posts a fee to reach the super arbiter
+
+<!-- handsoff-issue-584 -->
+- #584: feat: bundle summary query

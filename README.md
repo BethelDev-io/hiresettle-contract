@@ -2660,3 +2660,6 @@ MIT
 
 <!-- handsoff-issue-555 -->
 - #555: feat: retention milestone proof deadline — expire unproven retention milestones
+
+<!-- handsoff-issue-568 -->
+- #568: feat: arbiter dispute inbox query — disputes awaiting a given arbiter's vote

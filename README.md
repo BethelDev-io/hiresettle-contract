@@ -2655,3 +2655,8 @@ The contract uses panic messages (strings) to signal errors instead of a formal 
 MIT
 
 ---
+
+## Handsoff notes
+
+<!-- handsoff-issue-555 -->
+- #555: feat: retention milestone proof deadline — expire unproven retention milestones

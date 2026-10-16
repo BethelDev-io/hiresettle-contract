@@ -2655,3 +2655,8 @@ The contract uses panic messages (strings) to signal errors instead of a formal 
 MIT
 
 ---
+
+## Handsoff notes
+
+<!-- handsoff-issue-544 -->
+- #544: feat: fee rebate expiry — unredeemed company rebates expire after a configurable period

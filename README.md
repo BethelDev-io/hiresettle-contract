@@ -2660,3 +2660,6 @@ MIT
 
 <!-- handsoff-issue-544 -->
 - #544: feat: fee rebate expiry — unredeemed company rebates expire after a configurable period
+
+<!-- handsoff-issue-566 -->
+- #566: feat: escalation fee — the escalating party posts a fee to reach the super arbiter

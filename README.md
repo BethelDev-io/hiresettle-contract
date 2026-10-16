@@ -2666,3 +2666,6 @@ MIT
 
 <!-- handsoff-issue-584 -->
 - #584: feat: bundle summary query
+
+<!-- handsoff-issue-586 -->
+- #586: feat: get_engagements_by_referrer query

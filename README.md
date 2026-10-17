@@ -2766,3 +2766,14 @@ The contract uses panic messages (strings) to signal errors instead of a formal 
 MIT
 
 ---
+
+## Handsoff notes
+
+<!-- handsoff-issue-579 -->
+- #579: feat: get_engagements_by_created_range query — filter by creation ledger
+
+<!-- handsoff-issue-580 -->
+- #580: feat: recruiter profile aggregate query
+
+<!-- handsoff-issue-582 -->
+- #582: feat: get_protocol_stats query — global totals for dashboards

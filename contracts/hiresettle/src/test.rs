@@ -191,6 +191,8 @@ fn default_config() -> EngagementConfig {
         fund_from_pool: false,
         snapshot_fee_tier: false,
         co_recruiter_bond_amount: None,
+        pull_payouts: false,
+        require_recruiter_acceptance: false,
     }
 }
 
@@ -1412,6 +1414,8 @@ fn test_metadata_hash_present() {
             fund_from_pool: false,
             snapshot_fee_tier: false,
             co_recruiter_bond_amount: None,
+            pull_payouts: false,
+            require_recruiter_acceptance: false,
         },
     );
 
@@ -1472,6 +1476,8 @@ fn test_metadata_hash_empty_string_rejected() {
             fund_from_pool: false,
             snapshot_fee_tier: false,
             co_recruiter_bond_amount: None,
+            pull_payouts: false,
+            require_recruiter_acceptance: false,
         },
     );
 }
@@ -1501,6 +1507,8 @@ fn test_co_recruiter_60_40_split() {
         fund_from_pool: false,
         snapshot_fee_tier: false,
         co_recruiter_bond_amount: None,
+        pull_payouts: false,
+        require_recruiter_acceptance: false,
     };
 
     client.create_engagement(
@@ -1595,6 +1603,8 @@ fn test_split_bps_over_10000_rejected() {
         fund_from_pool: false,
         snapshot_fee_tier: false,
         co_recruiter_bond_amount: None,
+        pull_payouts: false,
+        require_recruiter_acceptance: false,
     };
 
     client.create_engagement(
@@ -1637,6 +1647,8 @@ fn test_co_recruiter_gets_remainder() {
         fund_from_pool: false,
         snapshot_fee_tier: false,
         co_recruiter_bond_amount: None,
+        pull_payouts: false,
+        require_recruiter_acceptance: false,
     };
 
     client.create_engagement(
@@ -1694,6 +1706,8 @@ fn test_co_recruiter_summary_fields() {
         fund_from_pool: false,
         snapshot_fee_tier: false,
         co_recruiter_bond_amount: None,
+        pull_payouts: false,
+        require_recruiter_acceptance: false,
     };
 
     client.create_engagement(
@@ -1740,6 +1754,8 @@ fn test_split_bps_10000_accepted() {
         fund_from_pool: false,
         snapshot_fee_tier: false,
         co_recruiter_bond_amount: None,
+        pull_payouts: false,
+        require_recruiter_acceptance: false,
     };
 
     client.create_engagement(
@@ -7400,6 +7416,8 @@ fn test_co_recruiter_split_with_platform_fee() {
         fund_from_pool: false,
         snapshot_fee_tier: false,
         co_recruiter_bond_amount: None,
+        pull_payouts: false,
+        require_recruiter_acceptance: false,
     };
 
     client.create_engagement(
@@ -7815,6 +7833,8 @@ fn test_co_recruiter_split_with_odd_percentage_remainder() {
         fund_from_pool: false,
         snapshot_fee_tier: false,
         co_recruiter_bond_amount: None,
+        pull_payouts: false,
+        require_recruiter_acceptance: false,
     };
 
     client.create_engagement(
@@ -9228,6 +9248,8 @@ fn test_split_amendment_applies_to_future_not_past() {
             fund_from_pool: false,
             snapshot_fee_tier: false,
             co_recruiter_bond_amount: None,
+            pull_payouts: false,
+            require_recruiter_acceptance: false,
         },
     );
 
@@ -9282,6 +9304,8 @@ fn test_split_amendment_proposer_cannot_accept() {
             fund_from_pool: false,
             snapshot_fee_tier: false,
             co_recruiter_bond_amount: None,
+            pull_payouts: false,
+            require_recruiter_acceptance: false,
         },
     );
     client.propose_split_amendment(&recruiter, &eng_id, &5_000);
@@ -9307,6 +9331,8 @@ fn test_split_amendment_expires() {
             fund_from_pool: false,
             snapshot_fee_tier: false,
             co_recruiter_bond_amount: None,
+            pull_payouts: false,
+            require_recruiter_acceptance: false,
         },
     );
     client.set_amendment_ttl(&company, &100);
